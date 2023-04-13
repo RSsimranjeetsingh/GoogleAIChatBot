@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+<head>
+    <meta charset="utf-8">
+    <title>Google AI Chat Bot</title>
+	<style>
+	body{
+	  background:#fff;
+	  font-family: sans-serif;
+	}
+	h2{
+	    letter-spacing: 1px;
+    font-size: 27px;}
+	
+	.updatePrediction {
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    padding: 10px 30px;
+	<!--box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;-->
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	text-align: center;
+    }
+	button{
+background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 20px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+	}
+	
+	button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+	
+	  input {
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+    height: 36px;
+    padding: 5px 8px 0 14px;
+}
+input:hover{
+box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+	</style>
+
+</head>
+  
+<body>
+
+
+<div  class="updatePrediction">
+<h3 style="color:Teal;">Google AI Chat Bot</h3><br/><br/>
+    
+    <form action="/" method="post">
+        <input type="text" name="plain_text" 
+            placeholder="Enter Text to get Information"><br>
+                     
+        <button type="submit" name="submit">
+           Search
+        </button>
+		  
+    </form>
+	
+	<div id="res"></div>
+	</div>
+</body>
+  
+</html>
